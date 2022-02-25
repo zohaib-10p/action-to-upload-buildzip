@@ -1,0 +1,15 @@
+name: 'Upload your build'
+description: 'Upload the compressed build directory'
+inputs:
+  build-directory:
+    description: 'Name of the Build Directory'
+    required: true
+  build-command:
+    description: 'Build Command'
+    required: true
+  github-token:
+    description: 'Github Token'
+    required: true
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
