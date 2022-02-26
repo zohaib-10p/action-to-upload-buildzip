@@ -9,7 +9,19 @@ inputs:
     required: true
   github-token:
     description: 'Github Token'
+    required: false
+  rest-endpoint:
+    description: 'URL to post build zip file'
     required: true
+  rest-file-field:
+    description: 'Filename expected by rest endpoint'
+    required: true
+  rest-username:
+    description: 'User for Rest API'
+    required: false
+  rest-password:
+    description: 'Password for the User to get Bearer Token'
+    required: false
 runs:
   using: 'node16'
   main: 'dist/index.js'
