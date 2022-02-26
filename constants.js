@@ -5,5 +5,5 @@ export const REST_USERNAME_INPUT = 'rest-username';
 export const REST_PASSWORD_INPUT = 'rest-password';
 export const REST_FILENAME_INPUT = 'rest-file-field';
 
-export const TIMER_SECONDS_IN_ITERATION = 5;
+export const TIMER_SECONDS_IN_ITERATION = 5;//five seconds
 export const TIMER_ITERATIONS = 5;

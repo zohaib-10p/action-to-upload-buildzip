@@ -23,7 +23,7 @@ const REST_USERNAME_INPUT = 'rest-username';
 const REST_PASSWORD_INPUT = 'rest-password';
 const REST_FILENAME_INPUT = 'rest-file-field';
 
-const TIMER_SECONDS_IN_ITERATION = 5;
+const TIMER_SECONDS_IN_ITERATION = 5;//five seconds
 const TIMER_ITERATIONS = 5;
 
 
@@ -42987,8 +42987,8 @@ const recursiveDelay = async(num = 0, seconds = 1) => {
     if(num > 0){
         num = num -1 ;
         await sleep(seconds * 1000);
-        console.log(`${seconds} Elapsed...`);
-        recursiveDelay(num);
+        console.log(`Timer Iteration Completed after ${seconds} seconds`);
+        recursiveDelay(num, seconds);
     }
 }
 
